@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: rgb(34, 30, 58);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: rgb(171, 179, 229);
+        }
+
+        .logo img {
+            height: 80px;
+            margin-right: 4cap;
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(171, 179, 229);
+            font-weight: 500;
+        }
+
+        .container {
+            padding: 50px;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="./dhruva logo.png" alt="Cloudflare Logo">
+        <strong>Team dhRuVa</strong>
+    </div>
+    <nav>
+        <a href="./missionlead.html">Mission lead</a>
+        <a href="./crew.html">Crew</a>
+        <a href="./wc.html">Cloudfare</a>
+        <a href="./about.html">About dhRuVa</a>
+    </nav>
+</header>
+
+<!-- React Root Element -->
+<div id="root"></div>
+
+<!-- React & Babel CDN -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- React Code -->
+<script type="text/babel">
+    function App() {
+        return (
+            <div className="container">
+                <h1>Target : dhRuVa Website</h1>
+                <p><strong>Cloudflare is the cloud for the “everywhere world”</strong></p>
+                <p>Today, everything needs to be connected to everything everywhere, all the time. This hyperconnectivity creates new challenges related to security, performance, resilience, and privacy.</p>
+                <p>As the world’s first <strong>connectivity cloud</strong>, Cloudflare helps connect and protect millions of customers globally.</p>
+                
+                <div className="video">
+                    <video controls autoPlay width="720" height="540">
+                        <source src="./videoo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+</script>
+
+</body>
+</html>
