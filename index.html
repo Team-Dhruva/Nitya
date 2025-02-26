@@ -29,7 +29,7 @@
 
         .logo img {
             height: 80px;
-            margin-right: 4cap;
+            margin-right: 20px;
         }
 
         nav {
@@ -41,6 +41,9 @@
             text-decoration: none;
             color: rgb(171, 179, 229);
             font-weight: 500;
+        }
+        nav a:hover {
+            background-color: aliceblue;
         }
 
         .container {
@@ -54,7 +57,6 @@
             margin-top: 30px;
             text-align: center;
         }
-        
     </style>
 </head>
 <body>
@@ -65,44 +67,24 @@
         <strong>Team dhRuVa</strong>
     </div>
     <nav>
-        <a href="./missionlead.html">Mission lead</a>
+        <a href="./missionlead.html">Mission Lead</a>
         <a href="./crew.html">Crew</a>
-        <a href="./wc.html">Cloudfare</a>
-        <a href="./about.html">About dhRuVa</a>
+        <a href="./about.html">Verticals</a>
     </nav>
 </header>
 
-<!-- React Root Element -->
-<div id="root"></div>
-
-<!-- React & Babel CDN -->
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
-<!-- React Code -->
-<script type="text/babel">
-    function App() {
-        return (
-            <div className="container">
-                <h1>Target : dhRuVa Website</h1>
-                <p><strong>Cloudflare is the cloud for the “everywhere world”</strong></p>
-                <p>Today, everything needs to be connected to everything everywhere, all the time. This hyperconnectivity creates new challenges related to security, performance, resilience, and privacy.</p>
-                <p>As the world’s first <strong>connectivity cloud</strong>, Cloudflare helps connect and protect millions of customers globally.</p>
-                
-                <div className="video">
-                    <video controls autoPlay width="720" height="540">
-                        <source src="./videoo.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(<App />);
-</script>
+<div class="container">
+    <h1>Target: dhRuVa Website</h1>
+    <p>A team of 5 starborn voyagers under the guidance of a celestial captain are on a mission to build full-fledged websites for the verticals of our club!</p>
+    <p>Starting off with the first task for the dhRuVa website: Familiarizing with web hosting!</p>
+    
+    <div class="video">
+        <video controls autoplay width="720" height="540">
+            <source src="./videoo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
 
 </body>
 </html>
