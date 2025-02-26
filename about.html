@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  rgb(34, 30, 58);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 50px;
+            color:aliceblue;
+            font-size: 48px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 200px;
+        }
+        .card {
+            width: 220px;
+            height: 300px;
+            background:  rgb(171, 179, 229);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .line {
+            height: 3px;
+            background: black;
+            margin: 15px auto;
+            width: 80%;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+
+        
+
+        }
+        .bottom-image {
+            width: 100%;
+            height: 250px; /* Adjust height as needed */
+            object-fit: cover;
+            margin-top: 150px;  
+        }
+        .home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(232, 233, 238);
+    color: rgb(34, 30, 58);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-button:hover {
+    background-color: #5a53bc;
+}
+    </style>
+</head>
+<body>
+    <a href="./index.html" class="home-button">Home</a>
+<h2>team dhRuVa</h2>
+<p style="color:aliceblue">As the astrophysics club of RVCE,we have majorly 5 verticals.
+  
+</p>
+<div class="container">
+    <div class="card">
+        <img src="./Research.png" alt="Detail 1">
+        <div class="line"></div>
+        <p>Research</p>
+    </div>
+    <div class="card">
+        <img src="./dda.png" alt="Detail 2">
+        <div class="line"></div>
+        <p>Data Driven Astronomy</p>
+    </div>
+    <div class="card">
+        <img src="./optical.png" alt="Detail 3">
+        <div class="line"></div>
+        <p>Optical astronomy</p>
+    </div>
+    <div class="card">
+        <img src="./radio.png" alt="Detail 4">
+        <div class="line"></div>
+        <p>Radio Astronomy</p>
+    </div>
+    <div class="card">
+        <img src="./PR.png" alt="Detail 5">
+        <div class="line"></div>
+        <p>PR</p>
+    </div>
+</div>
+
+ 
+
+</body>
+</html>
